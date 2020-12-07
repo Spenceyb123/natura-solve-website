@@ -1,0 +1,117 @@
+.tile-img {
+  width: 100%;
+  position: absolute;
+  bottom: -20%;
+  margin-bottom: 2.5em;
+}
+
+.tile-heading, .tile-para {
+  color: white;
+}
+
+.tile-heading {
+  padding: 1.4em 25%;
+  margin-bottom: 0;
+}
+
+.tile-para {
+  padding: 0 20%;
+}
+
+.read-more {
+  color: white;
+  padding: 0 25% 0 25%;
+  text-decoration: underline;
+}
+
+.read-more-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.read-more-para {
+  padding: 0 20%;
+}
+
+#wastewater {
+  background-color: #D8D8D8;
+  height: 825px;
+}
+
+.tile.mine-site {
+  height: 800px;
+}
+
+#mine-site {
+  background-color: #EAEAEA;
+  height: 950px;
+}
+
+.tile.petro {
+  height: 750px;
+}
+
+#petroleum {
+  height: 900px;
+  background-color: #D8D8D8;
+}
+
+#mosquito-control {
+  background-color: #EAEAEA;
+  height: 960px;
+}
+
+#industrial-wastewater {
+  background-color: #D8D8D8;
+  height: 840px;
+}
+
+.tile.ind-waste {
+  height: 700px;
+}
+
+#eng-dosing {
+  background-color: #454141;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 2em;
+  text-align: center;
+}
+
+.eng-dosing-logo-container {
+  width: 40%;
+}
+
+.eng-dosing-logo {
+  width: 100%;
+  margin-top: 2.5em;
+}
+
+.eng-dosing-content-container {
+  color: white;
+}
+
+.eng-dosing-para {
+  color: #EFE2E2;
+  margin-bottom: 2.5em;
+}
+
+.eng-dosing-heading {
+  margin: 1.1em 0;
+}
+
+.hours-list {
+  opacity: 0.60;
+}
+
+.little-drop-does-lot {
+  color: #2D4E76;
+  position: relative;
+  left: -25px;
+  width: fit-content;
+  white-space: nowrap;
+  align-self: center;
+}
+
