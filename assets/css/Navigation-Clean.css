@@ -184,28 +184,10 @@
   color: #18607F;
 }
 
-.landing {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.earth {
-  width: 75%;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto;
-}
-
 .landing-tagline {
   text-align: center;
   margin-top: 1em;
-}
-
-.landing-btn-group {
-  display: flex;
-  justify-content: space-evenly;
+  grid-area: c;
 }
 
 .btn:not(:disabled):not(.disabled) {
@@ -244,16 +226,11 @@
 
 .tile {
   background-color: #2D4E76;
-  height: 700px;
+  height: auto;
   width: 90%;
   margin: 0 auto;
   border-radius: 0 0 10% 10%;
   position: relative;
-}
-
-#agriculture {
-  height: 940px;
-  background-color: #EAEAEA;
 }
 
 .ag-image {

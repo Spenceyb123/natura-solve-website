@@ -1,8 +1,6 @@
 .tile-img {
   width: 100%;
-  position: absolute;
-  bottom: -20%;
-  margin-bottom: 2.5em;
+  padding-top: 1.5em;
 }
 
 .tile-heading, .tile-para {
@@ -10,7 +8,7 @@
 }
 
 .tile-heading {
-  padding: 1.4em 25%;
+  padding: 1.4em 20%;
   margin-bottom: 0;
 }
 
@@ -35,7 +33,6 @@
 
 #wastewater {
   background-color: #D8D8D8;
-  height: 825px;
 }
 
 .tile.mine-site {
@@ -44,30 +41,22 @@
 
 #mine-site {
   background-color: #EAEAEA;
-  height: 950px;
-}
-
-.tile.petro {
-  height: 750px;
 }
 
 #petroleum {
-  height: 900px;
   background-color: #D8D8D8;
 }
 
 #mosquito-control {
   background-color: #EAEAEA;
-  height: 960px;
 }
 
 #industrial-wastewater {
   background-color: #D8D8D8;
-  height: 840px;
 }
 
 .tile.ind-waste {
-  height: 700px;
+  height: 703px;
 }
 
 #eng-dosing {
@@ -106,6 +95,20 @@
   opacity: 0.60;
 }
 
+@media (orientation: landscape) {
+  .little-drop-does-lot {
+    color: #2D4E76;
+    position: relative;
+    left: 25%;
+    width: fit-content;
+    white-space: nowrap;
+    align-self: center;
+    margin-bottom: 1em;
+    /*grid-row: 1/3;*/
+    grid-area: l;
+  }
+}
+
 .little-drop-does-lot {
   color: #2D4E76;
   position: relative;
@@ -113,5 +116,96 @@
   width: fit-content;
   white-space: nowrap;
   align-self: center;
+  margin-bottom: 1em;
+}
+
+#agriculture {
+  background-color: #EAEAEA;
+}
+
+.services-section {
+  height: auto;
+  padding-bottom: 15%;
+}
+
+@media (min-width: 550px) {
+  .earth-container {
+    max-width: 65vw;
+    margin: 1em auto;
+  }
+}
+
+@media (orientation: landscape) {
+  .earth-container {
+    max-width: 40vw !important;
+    margin: 1em auto;
+    max-height: 80%;
+    grid-area: e;
+  }
+}
+
+.earth-container {
+  max-width: 85vw;
+  margin: 1em auto;
+}
+
+@media (orientation: landscape) {
+  .a-little-drop {
+    /*position: static;*/
+    /*width: fit-content;*/
+    font-size: 5vh !important;
+  }
+}
+
+.a-little-drop {
+  /*position: static;*/
+  /*width: fit-content;*/
+  font-size: 3vh;
+}
+
+@media (orientation: landscape) {
+  .earth {
+    width: 100%;
+    /*display: block;*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.earth {
+  width: 100%;
+  /*display: block;*/
+}
+
+@media (orientation: landscape) {
+  .landing {
+    height: calc(100vh - 56px) !important;
+    display: grid !important;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: ". ." ". ." ". ." "l e" "l e" ". e" "c e" "c e" ". e" "b e" ". ." ". .";
+  }
+}
+
+.landing {
+  height: calc(100vh - 56px);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (orientation: landscape) {
+  .landing-btn-group {
+    justify-content: space-evenly;
+    /*grid-column: 1/1;*/
+    grid-area: b;
+  }
+}
+
+.landing-btn-group {
+  display: flex;
+  justify-content: space-evenly;
 }
 
