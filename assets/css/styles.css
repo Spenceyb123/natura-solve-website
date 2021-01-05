@@ -7,9 +7,24 @@
   color: white;
 }
 
+@media (orientation: landscape) {
+  .tile-heading {
+    padding: 1.4em 20%;
+    margin-bottom: 0;
+    transform: rotate(-90deg);
+  }
+}
+
 .tile-heading {
   padding: 1.4em 20%;
   margin-bottom: 0;
+}
+
+@media (orientation: landscape) {
+  .tile-para {
+    padding: 0 20%;
+    transform: rotate(-90deg);
+  }
 }
 
 .tile-para {
@@ -25,6 +40,13 @@
 .read-more-link {
   color: white;
   text-decoration: underline;
+}
+
+@media (orientation: landscape) {
+  .read-more-para {
+    padding: 0 20%;
+    transform: rotate(-90deg);
+  }
 }
 
 .read-more-para {
@@ -97,14 +119,7 @@
 
 @media (orientation: landscape) {
   .little-drop-does-lot {
-    color: #2D4E76;
-    position: relative;
-    left: 25%;
-    width: fit-content;
-    white-space: nowrap;
-    align-self: center;
-    margin-bottom: 1em;
-    /*grid-row: 1/3;*/
+    margin: 0 auto;
     grid-area: l;
   }
 }
@@ -116,7 +131,8 @@
   width: fit-content;
   white-space: nowrap;
   align-self: center;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 #agriculture {
@@ -128,54 +144,47 @@
   padding-bottom: 15%;
 }
 
-@media (min-width: 550px) {
-  .earth-container {
-    max-width: 65vw;
-    margin: 1em auto;
-  }
-}
-
 @media (orientation: landscape) {
   .earth-container {
-    max-width: 40vw !important;
-    margin: 1em auto;
-    max-height: 80%;
+    height: max-content;
     grid-area: e;
+    max-width: max-content !important;
+    align-self: center;
   }
 }
 
 .earth-container {
-  max-width: 85vw;
+  max-width: 80vw;
   margin: 1em auto;
 }
 
 @media (orientation: landscape) {
   .a-little-drop {
-    /*position: static;*/
-    /*width: fit-content;*/
-    font-size: 5vh !important;
+    font-size: 4vw !important;
   }
 }
 
 .a-little-drop {
-  /*position: static;*/
-  /*width: fit-content;*/
-  font-size: 3vh;
+  font-size: 3.2vh;
 }
 
 @media (orientation: landscape) {
   .earth {
-    width: 100%;
-    /*display: block;*/
+    width: 80%;
+    display: block;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    max-height: 85vh !important;
+    margin: 0 auto;
   }
 }
 
-.earth {
-  width: 100%;
-  /*display: block;*/
+@media (orientation: portrait) {
+  .earth {
+    width: 100%;
+    max-height: 55vh !important;
+  }
 }
 
 @media (orientation: landscape) {
@@ -183,8 +192,8 @@
     height: calc(100vh - 56px) !important;
     display: grid !important;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas: ". ." ". ." ". ." "l e" "l e" ". e" "c e" "c e" ". e" "b e" ". ." ". .";
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: ". e" ". e" "l e" "l e" ". e" "c e" "c e" ". e" "b e" ". e";
   }
 }
 
@@ -198,14 +207,87 @@
 
 @media (orientation: landscape) {
   .landing-btn-group {
-    justify-content: space-evenly;
-    /*grid-column: 1/1;*/
+    height: 2.5em;
     grid-area: b;
   }
 }
 
 .landing-btn-group {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-bottom: 2.5em;
+}
+
+@media (orientation: landscape) {
+  .landing-tagline {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.5vw !important;
+  }
+}
+
+.landing-tagline {
+  position: relative;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 1.7vh;
+}
+
+@media (orientation: landscape) {
+  #landing-tagline-container {
+    grid-area: c;
+    position: relative;
+    width: fit-content;
+    left: -75px;
+    margin: 0 auto;
+  }
+}
+
+@media (orientation: landscape) {
+  .tagline-ampersand {
+    position: absolute;
+    left: 100%;
+  }
+}
+
+@media (orientation: landscape) {
+  .renewing-water-and-soil {
+    position: absolute;
+    left: 115%;
+    top: 195%;
+    white-space: nowrap;
+  }
+}
+
+.btn:not(:disabled):not(.disabled) {
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn.btn-primary.landing-btns.products-btn {
+  margin-right: 2em;
+  padding: 0 20px;
+}
+
+@media (orientation: landscape) {
+  .tile {
+    background-color: #2D4E76;
+    height: auto;
+    width: 80% !important;
+    margin: 0 auto;
+    border-radius: 0 0 10% 10%;
+    position: relative;
+    transform: rotate(90deg);
+  }
+}
+
+.tile {
+  background-color: #2D4E76;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 0 0 10% 10%;
+  position: relative;
 }
 

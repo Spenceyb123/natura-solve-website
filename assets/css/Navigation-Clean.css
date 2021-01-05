@@ -184,18 +184,6 @@
   color: #18607F;
 }
 
-.landing-tagline {
-  text-align: center;
-  margin-top: 1em;
-  grid-area: c;
-}
-
-.btn:not(:disabled):not(.disabled) {
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
 .nav-logo {
   max-height: 20px;
   /*margin: 0 auto;*/
@@ -222,15 +210,6 @@
   margin: 0 2em 2em 2em;
   padding-top: 2em;
   color: #596C88;
-}
-
-.tile {
-  background-color: #2D4E76;
-  height: auto;
-  width: 90%;
-  margin: 0 auto;
-  border-radius: 0 0 10% 10%;
-  position: relative;
 }
 
 .ag-image {
