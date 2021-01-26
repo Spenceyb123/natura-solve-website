@@ -88,13 +88,6 @@
   color: #fff;
 }
 
-.does-a-lot {
-  position: absolute;
-  left: 69%;
-  margin-top: .5em;
-  width: fit-content;
-}
-
 .tile.mosquito {
   height: 785px;
 }

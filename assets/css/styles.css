@@ -1,7 +1,48 @@
+#award {
+  background-color: #D8D8D8;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-evenly;*/
+}
+
+@media (orientation: landscape) {
+  #award {
+    max-height: 100vh;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+  }
+}
+
+#award::before {
+  display: block;
+  content: " ";
+  /*margin-top: -40px;*/
+  height: 40px;
+  visibility: hidden;
+  pointer-events: none;
+  background-color: #D8D8D8;
+}
+
+.award {
+  text-align: center;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.tile {
+  background-color: #2D4E76;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
 .tile-heading {
   padding: 1.4em 20%;
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 3vmax;
 }
 
 .tile-img {
@@ -16,6 +57,7 @@
 
 .tile-para {
   padding: 0 20%;
+  font-size: 2.2vmax;
 }
 
 .read-more {
@@ -31,6 +73,18 @@
 
 .read-more-para {
   padding: 0 20%;
+  font-size: 2.2vmax;
+  margin: 2em 0;
+}
+
+#wastewater::before, #petroleum::before, #industrial-wastewater::before {
+  background-color: #EAEAEA;
+  display: block;
+  content: " ";
+  margin-top: -40px;
+  height: 40px;
+  /*visibility: hidden;*/
+  pointer-events: none;
 }
 
 #wastewater {
@@ -55,10 +109,6 @@
 
 #industrial-wastewater {
   background-color: #D8D8D8;
-}
-
-.tile.ind-waste {
-  height: 703px;
 }
 
 #eng-dosing {
@@ -114,7 +164,7 @@
 
 @media (orientation: landscape) {
   .little-drop-does-lot {
-    margin: 0 auto;
+    margin-left: 20%;
     grid-area: l;
   }
 }
@@ -130,35 +180,23 @@
   margin-top: 2em;
 }
 
-#agriculture {
-  background-color: #EAEAEA;
+#agriculture::before, #mine-site::before, #mosquito-control::before {
+  display: block;
+  content: " ";
+  margin-top: -40px;
+  height: 40px;
+  /*visibility: hidden;*/
+  pointer-events: none;
+  background-color: #D8D8D8;
 }
 
-@media (orientation: landscape) {
-  .section: nth-of-type(even) {
-    min-height: 100vh !important;
-    max-height: 100vh !important;
-    padding-bottom: 0 !important;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+#agriculture {
+  background-color: #EAEAEA;
 }
 
 .services-section {
   height: auto;
   padding-bottom: 15%;
-}
-
-@media (orientation: landscape) {
-  .earth-container {
-    height: max-content;
-    grid-area: e;
-    max-width: max-content !important;
-    align-self: center;
-  }
 }
 
 .earth-container {
@@ -178,28 +216,14 @@
 
 .earth {
   width: 100%;
-  max-height: 55vh !important;
+  max-height: 55vh;
 }
 
 @media (orientation: landscape) {
   .earth {
-    width: 80%;
-    display: block;
-    position: relative;
-    /*top: 50%;*/
-    /*transform: translateY(-50%);*/
-    max-height: 85vh;
-    margin: 0 auto;
-  }
-}
-
-@media (orientation: landscape) {
-  .landing {
-    height: calc(100vh - 56px) !important;
-    display: grid !important;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-areas: ". e" ". e" "l e" "l e" ". e" "c e" "c e" ". e" "b e" ". e";
+    width: auto;
+    height: 100%;
+    max-height: none;
   }
 }
 
@@ -208,6 +232,33 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+@media (orientation: landscape) {
+  .landing {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: ". e" ". e" "l e" "l e" ". e" "c e" "c e" ". e" ". e" "b e";
+  }
+}
+
+@media (min-aspect-ratio: 101/100) and (max-aspect-ratio: 163/100) {
+  .landing {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: ". e" ". e" "l e" "l e" ". e" "c e" "c e" ". e" "b e" ". e";
+  }
+}
+
+@media (orientation: landscape) {
+  .earth-container {
+    height: 75vh;
+    grid-area: e;
+    width: auto;
+    align-self: center;
+  }
 }
 
 @media (orientation: landscape) {
@@ -223,19 +274,11 @@
   margin-bottom: 2.5em;
 }
 
-@media (orientation: landscape) {
-  .landing-tagline {
-    text-align: center;
-    margin-top: 1em;
-    font-size: 1.5vw !important;
-  }
-}
-
 .landing-tagline {
   position: relative;
   text-align: center;
   margin-top: 1em;
-  font-size: 1.7vh;
+  font-size: 2vh;
 }
 
 @media (orientation: landscape) {
@@ -243,23 +286,21 @@
     grid-area: c;
     position: relative;
     width: fit-content;
-    left: -75px;
+    top: 30%;
     margin: 0 auto;
   }
 }
 
-@media (orientation: landscape) {
-  .tagline-ampersand {
-    position: absolute;
-    left: 100%;
-  }
+#landing-tagline-container {
+  margin: 0 auto;
+  max-width: 85%;
 }
 
 @media (orientation: landscape) {
-  .renewing-water-and-soil {
+  .water-and-soil {
     position: absolute;
-    left: 115%;
-    top: 195%;
+    left: 30%;
+    top: 105%;
     white-space: nowrap;
   }
 }
@@ -276,6 +317,14 @@
 }
 
 @media (orientation: landscape) {
+  .landing-tagline {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2vw;
+  }
+}
+
+@media (orientation: landscape) {
   .tile {
     background-color: #2D4E76;
     height: 70vh !important;
@@ -285,37 +334,6 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-  }
-}
-
-.tile {
-  background-color: #2D4E76;
-  height: auto;
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
-}
-
-@media (orientation: landscape) {
-  section:nth-of-type(even) {
-    transform: scale(-1);
-    justify-content: flex-end;
-  }
-}
-
-.award-link {
-  white-space: nowrap;
-  flex-basis: 100%;
-}
-
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
-@media (orientation: landscape) {
-  .tile.agriculture {
-    top: -7vh;
   }
 }
 
@@ -367,8 +385,8 @@
 
 @media (orientation: landscape) {
   .services-section {
-    min-height: 100vh !important;
-    max-height: 100vh !important;
+    min-height: 100vh;
+    max-height: 100vh;
     padding-bottom: 0 !important;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -405,28 +423,36 @@
   }
 }
 
+@media (min-aspect-ratio: 101/100) and (max-aspect-ratio: 159/100) {
+  .earth-container {
+    height: 65vh;
+    grid-area: e;
+    width: auto;
+    align-self: center;
+    margin-left: -5%;
+  }
+}
+
 @media (min-aspect-ratio: 101/100) and (max-aspect-ratio: 163/100) {
   .tile-heading {
     padding: 1.4em 20%;
     margin-bottom: 0;
     /*margin-left: 25%;*/
-    font-size: 3.5vmin;
+    font-size: 3vmax;
   }
 }
 
 @media (min-aspect-ratio: 101/100) and (max-aspect-ratio: 163/100) {
   .tile-para {
     padding: 0 20%;
-    font-size: 1.8vmin;
-    /*margin-left: 25%;*/
+    font-size: 1.6vmax;
   }
 }
 
 @media (min-aspect-ratio: 101/100) and (max-aspect-ratio: 163/100) {
   .read-more-para {
     padding: 0 20%;
-    font-size: 1.8vmin;
-    /*margin-left: 25%;*/
+    font-size: 1.6vmax;
   }
 }
 
@@ -444,6 +470,12 @@
 }
 
 @media (orientation: landscape) {
+  .tile.wastewater, .tile.petroleum, .tile.ind-waste {
+    transform: scale(-1);
+  }
+}
+
+@media (orientation: landscape) {
   .tile-img.rotate-right {
     transform: rotate(90deg);
     top: 0;
@@ -452,5 +484,65 @@
 
 * {
   box-sizing: border-box;
+}
+
+@media (orientation: landscape) {
+  #award {
+    min-height: calc(100vh);
+    max-height: max-content;
+  }
+}
+
+.services-list {
+  text-align: center;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+.award-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.award-link {
+  color: #0056b3;
+  /*margin-bottom: 0;*/
+}
+
+@media (orientation: landscape) {
+  .award-link {
+    color: #0056b3;
+    margin-top: 1em;
+  }
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  background-color: #fff;
+  border: none;
+  color: #2D4E76;
+  font-weight: bolder;
+  background-color: #D8D8D8;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+  z-index: 1;
+  color: #2D4E76;
+  text-decoration: none;
+  background-color: #eaeaea;
+}
+
+#wastewater, #petroleum, #industrial-wastewater {
+  justify-content: flex-start;
+}
+
+.does-a-lot {
+  position: absolute;
+  left: 4.2em;
+  margin-top: .5em;
 }
 

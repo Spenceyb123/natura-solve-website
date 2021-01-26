@@ -205,13 +205,6 @@
   background-color: white;
 }
 
-.award {
-  text-align: center;
-  margin: 0 2em 2em 2em;
-  padding-top: 2em;
-  color: #596C88;
-}
-
 .ag-image {
   /*display: block;*/
   /*position: absolute;*/
@@ -221,5 +214,13 @@
   /*margin: auto;*/
   margin-top: 80%;
   /*transform: translate(5%);*/
+}
+
+.fa.fa-shopping-cart {
+  font-size: 24px;
+}
+
+.dropdown.nav-links {
+  margin-right: 20px;
 }
 
