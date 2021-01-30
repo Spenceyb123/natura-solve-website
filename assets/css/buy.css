@@ -104,9 +104,10 @@
 
 .horizontal-divider {
   border-top: 1px solid #707070c7;
-  width: 95%;
+  width: 100%;
   box-shadow: 10px 3px 5px;
   margin-bottom: 70px;
+  clear: both;
 }
 
 .item-and-button-container {
@@ -122,6 +123,7 @@
 .discounted-pricing-para {
   font-size: 20px;
   text-align: center;
+  clear: both;
 }
 
 @media (orientation:landscape) {
@@ -147,7 +149,14 @@
 
 @media (orientation:landscape) {
   .item-and-button-container {
-    width: 45%;
+    width: 40%;
+  }
+}
+
+@media (orientation:landscape) {
+  .product-type-and-flex-container-for-product-type-landscape {
+    /*max-height: calc(100vh - 86px);*/
+    margin-bottom: 70px;
   }
 }
 
