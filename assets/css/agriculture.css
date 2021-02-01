@@ -1,0 +1,70 @@
+.agriculture-landing {
+  height: calc(100vh - 56px);
+}
+
+.ag-landing-image.individual-product-page-image-container {
+  width: 100%;
+}
+
+.ag-landing-image {
+  height: calc(40% - 56px);
+  background: url("../../assets/img/agriculture/agriculture-natural-landing-page.jpg") no-repeat;
+  background-size: cover;
+}
+
+.ag-page-main-heading {
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.ag-page-main-para {
+  text-align: center;
+  color: #2D4E76;
+  font-weight: bold;
+}
+
+.ag-page-main-subheading {
+  color: #2ADC3C;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.ag-page-main-button {
+  background-color: #E25F28;
+}
+
+.ag-page-main-button-container {
+  text-align: center;
+}
+
+.ag-main-why-how-spans {
+  border-bottom: 5px solid #2ADC3C;
+}
+
+.ag-main-content-container {
+  padding: 16px;
+  color: #5E5E5E;
+}
+
+.ag-page-why-list-spans {
+  font-weight: bold;
+}
+
+.ag-page-why-try-heading {
+  margin-bottom: 40px;
+}
+
+.ag-pick-an-area-span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.ag-landing-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-around;
+}
+

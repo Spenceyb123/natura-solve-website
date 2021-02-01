@@ -239,7 +239,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(10, 1fr);
-    grid-template-areas: ". e" ". e" "l e" "l e" ". e" "c e" "c e" ". e" ". e" "b e";
+    grid-template-areas: ". e" ". e" "l e" "l e" ". e" "c e" ". e" ". e" "b e" ". e";
   }
 }
 
@@ -286,7 +286,7 @@
     grid-area: c;
     position: relative;
     width: fit-content;
-    top: 30%;
+    /*top: 50%;*/
     margin: 0 auto;
   }
 }
