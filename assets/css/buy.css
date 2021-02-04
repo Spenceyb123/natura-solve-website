@@ -56,7 +56,7 @@
   text-align: center;
   font-weight: bold;
   color: #373F52;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .item-link-wrapper:link, .item-link-wrapper:visited, .item-link-wrapper:hover, .item-link-wrapper:active {
@@ -72,6 +72,8 @@
 
 .item-image-container {
   padding-top: 30px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .add-to-cart {

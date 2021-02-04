@@ -26,9 +26,7 @@ function reportWindowSize() {
 window.onresize = reportWindowSize;
 //to switch tile-img when browser resized from mobile to landscape
 
+//scroll tiles into view
 
-       
- 
-    // window.onclick = function(){
-    //      alert("Your browser size is: " + window.innerWidth + "x" + window.innerHeight)
-    // };
+
+
