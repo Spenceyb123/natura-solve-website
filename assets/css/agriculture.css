@@ -159,3 +159,15 @@
   }
 }
 
+.fyi-resources-title {
+  color: #5E5E5E;
+  text-align: left;
+  /*margin-bottom: 40px;*/
+}
+
+.fyi-resources-container {
+  padding: 16px;
+  max-width: max-content;
+  margin: 0 auto;
+}
+
