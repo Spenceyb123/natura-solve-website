@@ -547,7 +547,14 @@
   margin-top: .5em;
 }
 
+.btn.btn-primary.landing-btns.products-btn:hover {
+  background: rgb(226,95,40, 70%);
+  box-shadow: 2px 2px 20px;
+}
+
 .btn.btn-primary.landing-btns.products-btn {
+  background: rgb(226,95,40);
+  border-color: transparent;
 }
 
 html {
@@ -556,5 +563,17 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
+}
+
+.btn.btn-primary.landing-btns.learn-more-btn:hover {
+  background: rgb(201,201,201, 70%);
+}
+
+.btn.btn-primary.landing-btns.learn-more-btn {
+  color: #2D4E76;
+  background: rgb(201,201,201);
+  border-color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
