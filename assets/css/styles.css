@@ -46,9 +46,10 @@
 }
 
 .tile-img {
-  width: 100.15%;
+  width: 100.25%;
   padding-top: 1.5em;
   position: relative;
+  transform: translateY(1%);
 }
 
 .tile-heading, .tile-para {
@@ -368,19 +369,19 @@
 
 @media (orientation: landscape) {
   .tile-img {
-    height: 100.1% !important;
+    height: 100.5%;
     width: auto !important;
     padding-top: 0 !important;
     /*right: .1%;*/
     position: absolute !important;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-2px);
   }
 }
 
 @media (orientation: landscape) {
   .tile-img.wastewater {
-    transform: rotate(180deg) translateY(50%);
+    transform: rotate(180deg) translateY(50%) translateX(2px);
   }
 }
 
@@ -478,7 +479,7 @@
 
 @media (orientation: landscape) {
   .tile-img.rotate-right {
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateY(2px) translateX(-1px);
     top: 0;
   }
 }
