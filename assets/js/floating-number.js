@@ -1,4 +1,4 @@
-let floatingIcon = document.getElementsByClassName("float-phone-icon")[0];
+let floatingIcon = document.getElementsByClassName("float-phone-icon-container")[0];
 
 let phoneNumber = document.getElementsByClassName("float-span-link")[0];
 

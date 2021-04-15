@@ -29,3 +29,20 @@
   color: white;
 }
 
+.float-phone-icon-container {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /*display: inline-block;*/
+  z-index: 2;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 2;
+}
+
