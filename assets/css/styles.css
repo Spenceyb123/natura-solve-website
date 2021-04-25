@@ -577,3 +577,13 @@ html {
   padding-right: 20px;
 }
 
+@media (min-width:1200px) {
+  .navbar-expand-xl .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+}
+
