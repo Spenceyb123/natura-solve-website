@@ -2,4 +2,3 @@ A redesign and hand-coded redevelopment of naturasolve.com . This project is sti
 
 I designed the webpages with Adobe XD, and created it with the help of Bootstrap Studio. The shopping cart is integrated from third party vendor Goldstar Payments. 
 
-The links in orange are finished, as well as the cart and all individual product pages. 
